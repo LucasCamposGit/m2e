@@ -1,19 +1,22 @@
 "use client";
+
 import Image from "next/image";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
-  const location = window.location.pathname;
+  let location: string = "";
+
+  useEffect(() => {
+    location = window.location.pathname;
+  }, []);
 
   let defaultLinkStyle = "border-t-2 py-2 hover:border-t-4 px-5 text-green";
   let activeLinkStyle = "border-t-4 font-bold py-2 px-5 text-green";
 
   return (
-    <header
-      className={"bg-green flex justify-center gap-6 items-center py-6"}
-    >
+    <header className={"bg-green flex justify-center gap-6 items-center py-6"}>
       <div className="flex items-center">
         <a href="/" className="text-xl font-bold text-green">
           <Image
@@ -21,9 +24,7 @@ const Header: React.FC<HeaderProps> = () => {
             alt="M2E"
             width={200}
             height={200}
-          >
-
-          </Image>
+          ></Image>
         </a>
       </div>
       <nav className="">
