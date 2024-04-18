@@ -1,16 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
-  let location: string = "";
-
-  useEffect(() => {
-    location = window.location.pathname;
-  }, []);
+  let location: string = usePathname();
 
   let defaultLinkStyle = "border-t-2 py-2 hover:border-t-4 px-5 text-green";
   let activeLinkStyle = "border-t-4 font-bold py-2 px-5 text-green";
