@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./components/header";
+import { title } from "process";
 
 export default function Home() {
   type Advatages = {
@@ -14,6 +15,17 @@ export default function Home() {
       description:
         "Documentadas em tempo real, podendo ser acessadas através do sistema SOC",
       img: "/imgs/pc.png",
+    },
+    {
+      title: "CLINICA PRÓPRIA E CREDENCIADA",
+      description: "São mais de 700 clínicas credenciadas em todo o Brasil",
+      img: "/imgs/clinic.png",
+    },
+    {
+      title: "REDUÇÃO DE CUSTOS COM EXAMES COMPLEMENTARES",
+      description:
+        "Redução de 15% a 25% nos exames e análises químicas, sem aceitarmos comissões de terceiros",
+      img: "/imgs/money.png",
     },
   ];
 
@@ -134,7 +146,7 @@ export default function Home() {
                 width={100}
                 alt="right arrow"
               ></Image>
-              <h1 className="text-lg">{item.title}</h1>
+              <h1 className="text-lg text-center">{item.title}</h1>
               <span className="w-10 h-0.5 bg-orange-400 mt-5"></span>
               <p className="text-base w-72 text-center ">{item.description}</p>
             </div>
