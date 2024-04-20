@@ -27,6 +27,24 @@ export default function Home() {
         "Redução de 15% a 25% nos exames e análises químicas, sem aceitarmos comissões de terceiros",
       img: "/imgs/money.png",
     },
+    {
+      title: "REDUÇÃO DE CUSTOS COM GESTÃO DE ABSENTEÍSMO",
+      description:
+        "Gestão através de metodologia, com identificação tratamento de falsos absenteístas",
+      img: "/imgs/money.png",
+    },
+    {
+      title: "TREINAMENTOS IN COMPANY",
+      description:
+        "Treinamentos in company conduzidos por especialistas em conformidade com as normas regulamentadoras específicas.",
+      img: "/imgs/teacher.png",
+    },
+    {
+      title: "GERAÇÃO DE EVENTOS ESOCIAL",
+      description:
+        "Criar e enviar eventos de Segurança e Saúde do Trabalho (SST) em XML (S-2210, S-2220 e S-2240) para o eSocial.",
+      img: "/imgs/esocial.png",
+    },
   ];
 
   return (
@@ -134,13 +152,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-3">
+      <section className="grid grid-cols-3 gap-y-20 px-20">
         {advantages.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
               <Image
                 // add a black blend to the image
-                className="filter brightness-50"
+                className="filter brightness-50 w-36 h-36"
                 src={item.img}
                 height={100}
                 width={100}
