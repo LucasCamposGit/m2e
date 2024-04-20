@@ -8,11 +8,11 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
   let location: string = usePathname();
 
-  let defaultLinkStyle = "border-t-2 py-2 hover:border-t-4 px-5 text-green";
-  let activeLinkStyle = "border-t-4 font-bold py-2 px-5 text-green";
+  let defaultLinkStyle = "border-t-2 border-orange-400 py-2 hover:border-t-4 px-5 text-green";
+  let activeLinkStyle = "border-t-4 border-orange-400 font-bold py-2 px-5 text-green";
 
   return (
-    <header className={"bg-green flex justify-center gap-6 items-center py-6"}>
+    <header className={"bg-green  flex justify-center gap-6 items-center py-6"}>
       <div className="flex items-center">
         <a href="/" className="text-xl font-bold text-green">
           <Image
