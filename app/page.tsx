@@ -2,6 +2,21 @@ import Image from "next/image";
 import Header from "./components/header";
 
 export default function Home() {
+  type Advatages = {
+    title: string;
+    description: string;
+    img: string;
+  }[];
+
+  let advantages = [
+    {
+      title: "DOCUMENTAÇÃO DIGITAL",
+      description:
+        "Documentadas em tempo real, podendo ser acessadas através do sistema SOC",
+      img: "/imgs/pc.png",
+    },
+  ];
+
   return (
     <main className="bg-gray-100">
       <Header />
@@ -12,16 +27,20 @@ export default function Home() {
               pt-14 h-96 bg-cover bg-[url('/imgs/background.gif')]
               relative"
       >
-        <h1 className="text-4xl text-white">Gestão Inteligente</h1>
-        <p className="text-lg text-white">Segurança e Saúde no Trabalho</p>
+        <h1 className="text-5xl drop-shadow-lg text-white">
+          Gestão Inteligente
+        </h1>
+        <p className="text-lg drop-shadow-lg text-white">
+          Segurança e Saúde no Trabalho
+        </p>
 
-        <h2 className="rounded bg-white bg-opacity-35 text-blue-100 absolute bottom-16 w-56 p-4 flex">
+        <h2 className="rounded shadow-md bg-white bg-opacity-85 text-orange-900 absolute bottom-16 w-56 p-4 flex">
           Descubra o que podemos fazer pela sua empresa.
           <a href="#vantagens" className="flex items-center">
             <Image
               src="/imgs/right-arrow.svg"
               alt="arrow-right"
-              className="ml-2 filter invert"
+              className="ml-2 filter invert hover:filter-none"
               width={50}
               height={50}
             />
@@ -98,9 +117,29 @@ export default function Home() {
         </div>
         <div className="p-10 flex flex-col information gap-5">
           <h2 className="!mt-0 ">
-          Conheça algumas vantagens em ser cliente M2E.
+            Conheça algumas vantagens em ser cliente M2E.
           </h2>
         </div>
+      </section>
+
+      <section className="grid grid-cols-3">
+        {advantages.map((item) => {
+          return (
+            <div className="flex flex-col items-center gap-5">
+              <Image
+                // add a black blend to the image
+                className="filter brightness-50"
+                src={item.img}
+                height={100}
+                width={100}
+                alt="right arrow"
+              ></Image>
+              <h1 className="text-lg">{item.title}</h1>
+              <span className="w-10 h-0.5 bg-orange-400 mt-5"></span>
+              <p className="text-base w-72 text-center ">{item.description}</p>
+            </div>
+          );
+        })}
       </section>
     </main>
   );

@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = () => {
   let activeLinkStyle = "border-t-4 border-orange-400 font-bold py-2 px-5 text-green";
 
   return (
-    <header className={"bg-green  flex justify-center gap-6 items-center py-6"}>
+    <header className={"w-full bg-green  flex justify-center gap-6 items-center py-6"}>
       <div className="flex items-center">
         <a href="/" className="text-xl font-bold text-green">
           <Image
