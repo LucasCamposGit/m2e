@@ -135,9 +135,9 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-3">
-        {advantages.map((item) => {
+        {advantages.map((item, index) => {
           return (
-            <div className="flex flex-col items-center gap-5">
+            <div key={index} className="flex flex-col items-center gap-5">
               <Image
                 // add a black blend to the image
                 className="filter brightness-50"
