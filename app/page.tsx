@@ -78,7 +78,7 @@ export default function Home() {
         </h2>
       </section>
 
-      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24">
+      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1">
         <div className="flex justify-between items-start p-10 sm:grid sm:grid-flow-row sm:items-start">
           <Image
             src={"/imgs/right-simbol.png"}
