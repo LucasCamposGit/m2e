@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = () => {
   let activeLinkStyle = "border-t-4 border-orange-400 font-bold py-2 px-5 text-green";
 
   return (
-    <header className={"w-full bg-green  flex justify-center gap-6 items-center py-6"}>
+    <header className={"w-full bg-green flex justify-center gap-6 items-center py-6"}>
       <div className="flex items-center">
         <a href="/" className="text-xl font-bold text-green">
           <Image
@@ -20,11 +20,11 @@ const Header: React.FC<HeaderProps> = () => {
             alt="M2E"
             width={200}
             height={200}
-          ></Image>
+          />
         </a>
       </div>
       <nav className="">
-        <ul className="flex gap-6 w-full">
+        <ul className="flex gap-6 w-full md:flex md:flex-row flex-col">  {/* Added responsive classes */}
           <li className="">
             <a
               href="/"

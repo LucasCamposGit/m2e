@@ -78,15 +78,15 @@ export default function Home() {
         </h2>
       </section>
 
-      <section className="grid grid-cols-[0.6fr_1fr]  gap-2 info px-24">
-        <div className="flex justify-between items-start p-10">
+      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24">
+        <div className="flex justify-between items-start p-10 sm:grid sm:grid-flow-row sm:items-start">
           <Image
             src={"/imgs/right-simbol.png"}
             height={150}
             width={150}
             alt="right arrow"
-          ></Image>
-          <h1 className="mt-4 whitespace-nowrap">Quem somos</h1>
+          />
+          <h1 className="mt-4 ">Quem somos</h1>
         </div>
         <div className="p-10 flex flex-col information gap-5">
           <h2 className="!mt-0 ">
@@ -125,6 +125,7 @@ export default function Home() {
             responsabilidade social e ambiental, integridade e ética, e foco no
             cliente são os pilares que sustentam a nossa atuação.
           </p>
+
           <h2>Propósito</h2>
           <p>
             Empregar conhecimento técnico e experiência para revolucionar a
@@ -135,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-[0.6fr_1fr]  gap-2 info px-24">
+      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1 ">
         <div className="flex justify-between items-start p-10">
           <Image
             src={"/imgs/right-simbol.png"}
@@ -152,7 +153,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-y-20 px-20">
+      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1"  >
         {advantages.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
