@@ -88,7 +88,7 @@ export default function Home() {
           />
           <h1 className="mt-4 ">Quem somos</h1>
         </div>
-        <div className="p-10 flex flex-col information gap-5">
+        <div className="p-10 flex flex-col information gap-5 max-md:p-1">
           <h2 className="!mt-0 ">
             Somos uma das consultorias líderes em segurança e saúde no trabalho
             no Brasil.
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1 ">
-        <div className="flex justify-between items-start p-10">
+        <div className="flex justify-between items-start p-10  max-md:grid max-md:grid-flow-row">
           <Image
             src={"/imgs/right-simbol.png"}
             height={150}
