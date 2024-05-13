@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Header from "../components/header";
 
-let services: Array<Services> = [
-  
+// let services: Array<Services> = [
 
-];
 
-type Services = {
-  title: string;
-  description: string;
-  img: string;
-};
+// ];
+
+// type Services = {
+//   title: string;
+//   description: string;
+//   img: string;
+// };
 
 export default function Services() {
   return (
@@ -22,7 +22,7 @@ export default function Services() {
     
       </section>
 
-      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1"  >
+      {/* <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1"  >
         {services.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
@@ -40,7 +40,7 @@ export default function Services() {
             </div>
           );
         })}
-      </section>
+      </section> */}
     </main>
   );
 }
