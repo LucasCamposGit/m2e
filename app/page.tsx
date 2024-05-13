@@ -106,8 +106,8 @@ export default function Home() {
             para transformar o SESMT (Serviço Especializado em Engenharia de
             Segurança e Medicina do Trabalho) em um processo mais eficiente e
             ágil. Durante um congresso de segurança ocupacional, uma ideia
-            surgiu: "E se pudéssemos usar a tecnologia para revolucionar esses
-            processos?"
+            surgiu: &quot;E se pudéssemos usar a tecnologia para revolucionar esses
+            processos?&quot;
           </p>
 
           <h2>Missão</h2>
