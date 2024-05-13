@@ -18,8 +18,8 @@ const Header: React.FC<HeaderProps> = () => {
           <Image
             src={"/imgs/logo.jpeg"}
             alt="M2E"
-            width={200}
-            height={200}
+            width={110}
+            height={110}
           />
         </a>
       </div>
