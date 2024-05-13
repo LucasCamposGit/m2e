@@ -54,17 +54,17 @@ export default function Home() {
       <section
         className="w-screen flex gap-5 
               flex-col justify-start items-start pl-20 
-              pt-14 h-96 bg-cover bg-[url('/imgs/background.gif')]
+              pt-14 h-96 bg-white bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/background.jpg')]
               relative"
       >
-        <h1 className="text-5xl drop-shadow-lg text-white">
+        <h1 className="text-5xl drop-shadow-lg">
           Gestão Inteligente
         </h1>
-        <p className="text-lg drop-shadow-lg text-white">
+        <p className="text-lg drop-shadow-lg">
           Segurança e Saúde no Trabalho
         </p>
 
-        <h2 className="rounded shadow-md bg-white bg-opacity-85 text-orange-900 absolute bottom-16 w-56 p-4 flex">
+        <h2 className="rounded shadow-md bg-gray-600 bg-opacity-85 text-white absolute bottom-16 w-56 p-4 flex">
           Descubra o que podemos fazer pela sua empresa.
           <a href="#vantagens" className="flex items-center">
             <Image

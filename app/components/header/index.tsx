@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = () => {
       <div className="flex items-center">
         <a href="/" className="text-xl font-bold text-green">
           <Image
-            src={"/imgs/logo.png"}
+            src={"/imgs/logo.jpeg"}
             alt="M2E"
             width={200}
             height={200}
