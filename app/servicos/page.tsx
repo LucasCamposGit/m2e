@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Header from "../components/header";
 
-let services: Array<Services> = [];
+let services: Array<Services> = [
+  
+
+];
 
 type Services = {
   title: string;
@@ -11,7 +14,7 @@ type Services = {
 
 export default function Services() {
   return (
-    <main>
+    <main className="bg-gray-100">
       <Header />
       <section className={"flex justify-center items-center h-screen"}>
         <h1 className={"text-4xl font-bold text-green"}>Serviços</h1>
