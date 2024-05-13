@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
               M2E
             </a>
           </li>
-          <li className="">
+          {/* <li className="">
             <a
               href="/equipe"
               className={
@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = () => {
             >
               EQUIPE
             </a>
-          </li>
+          </li> */}
           <li className="">
             <a
               href="/servicos"

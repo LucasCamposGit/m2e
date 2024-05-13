@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1">
-        <div className="flex justify-between items-start p-10 sm:grid sm:grid-flow-row sm:items-start">
+        <div className="flex justify-between items-start p-10 max-md:grid max-md:grid-flow-row">
           <Image
             src={"/imgs/right-simbol.png"}
             height={150}
@@ -94,16 +94,20 @@ export default function Home() {
             no Brasil.
           </h2>
           <p>
-            Fundamos a Ilitera a partir da união de profissionais com mais de 27
-            anos de experiência e nos destacamos pelo assessoramento completo de
-            empresas de diversos tamanhos e segmentos da indústria, comércio e
-            serviços com atuação em todo o território nacional.{" "}
+            Em um mundo atolado por papelada, dados e exigências legais
+            intermináveis, Emerson e Mirian, dois engenheiros apaixonados por
+            segurança do trabalho, ansiavam por uma forma melhor de trabalhar.
+            Como líderes em suas empresas, eles estavam frustrados com a
+            sobrecarga administrativa que ofuscava seu verdadeiro propósito:
+            garantir a saúde e a segurança de seus colaboradores.
           </p>
           <p>
-            Fundamos a Ilitera a partir da união de profissionais com mais de 27
-            anos de experiência e nos destacamos pelo assessoramento completo de
-            empresas de diversos tamanhos e segmentos da indústria, comércio e
-            serviços com atuação em todo o território nacional.{" "}
+            Motivados por uma visão compartilhada, eles embarcaram em uma missão
+            para transformar o SESMT (Serviço Especializado em Engenharia de
+            Segurança e Medicina do Trabalho) em um processo mais eficiente e
+            ágil. Durante um congresso de segurança ocupacional, uma ideia
+            surgiu: "E se pudéssemos usar a tecnologia para revolucionar esses
+            processos?"
           </p>
 
           <h2>Missão</h2>
@@ -153,7 +157,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1"  >
+      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1">
         {advantages.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
