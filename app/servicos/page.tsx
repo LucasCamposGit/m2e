@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Header from "../components/header";
 
-let services: Array<Services> = [
-  
-
-];
+let services: Array<Services> = [];
 
 type Services = {
   title: string;
@@ -16,13 +13,16 @@ export default function Services() {
   return (
     <main className="bg-gray-100">
       <Header />
-      <section className={"flex justify-center items-center h-screen"}>
-        <h1 className={"text-4xl font-bold text-green"}>Serviços</h1>
-
-    
+      <section className={"flex mt-2 justify-center items-center h-screen"}>
+        <Image
+          alt={"services"}
+          src={"/imgs/services.jpeg"}
+          height={800}
+          width={1000}
+        ></Image>
       </section>
 
-      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1"  >
+      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1">
         {services.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
