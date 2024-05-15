@@ -57,16 +57,15 @@ export default function Home() {
               pt-14 h-96 bg-white bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/background.jpg')]
               relative"
       >
-        <h1 className="text-5xl drop-shadow-lg">
-          Gestão Inteligente
-        </h1>
-        <p className="text-lg drop-shadow-lg">
-          Segurança e Saúde no Trabalho
-        </p>
+        <h1 className="text-5xl drop-shadow-lg">Gestão Inteligente</h1>
+        <p className="text-lg drop-shadow-lg">Segurança e Saúde no Trabalho</p>
 
-        <h2 className="rounded shadow-md bg-gray-600 bg-opacity-85 text-white absolute bottom-16 w-56 p-4 flex">
-          Descubra o que podemos fazer pela sua empresa.
-          <a href="#vantagens" className="flex items-center">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScMQzRvDO6H2SMwtyqrRZoo_P7f_XT5BfuC60TRBahm2XGuKg/viewform?usp=sharing"
+          className="flex items-center"
+        >
+          <h2 className="rounded shadow-md bg-gray-600 bg-opacity-85 text-white absolute bottom-16 w-56 p-4 flex">
+            Solicite aqui seu orçamento
             <Image
               src="/imgs/right-arrow.svg"
               alt="arrow-right"
@@ -74,8 +73,8 @@ export default function Home() {
               width={50}
               height={50}
             />
-          </a>
-        </h2>
+          </h2>
+        </a>
       </section>
 
       <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1">
@@ -106,8 +105,8 @@ export default function Home() {
             para transformar o SESMT (Serviço Especializado em Engenharia de
             Segurança e Medicina do Trabalho) em um processo mais eficiente e
             ágil. Durante um congresso de segurança ocupacional, uma ideia
-            surgiu: &quot;E se pudéssemos usar a tecnologia para revolucionar esses
-            processos?&quot;
+            surgiu: &quot;E se pudéssemos usar a tecnologia para revolucionar
+            esses processos?&quot;
           </p>
 
           <h2>Missão</h2>
