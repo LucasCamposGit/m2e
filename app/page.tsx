@@ -174,26 +174,25 @@ export default function Home() {
 
       <footer className="bg-teal-700 text-white py-6">
         <div className="container mx-auto px-4">
-          <h2 className="text-lg font-bold">Entre em contato conosco!</h2>
-          <div className="flex flex-col md:flex-row justify-between items-center mt-4">
-            <div className="flex flex-col items-start">
-              <p>Telefone:</p>
+          <h2 className="text-lg font-bold text-center mb-4">Entre em contato conosco!</h2>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col items-center md:items-start">
+              <p className="font-bold">Telefone:</p>
               <p>(11) 91769-6435</p>
               <p>(19) 99614-7086</p>
             </div>
-            <div className="mt-4 md:mt-0">
+            <div className="text-center md:text-left">
               <p className="font-bold">E-mail comercial:</p>
               <a
                 href="mailto:mirianoliveira@m2esolutionsst.onmicrosoft.com"
-                className="flex items-center mt-2"
+                className="break-all hover:underline"
               >
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 mirianoliveira@m2esolutionsst.onmicrosoft.com
               </a>
             </div>
-            <div className="mt-4 md:mt-0">
+            <div className="text-center md:text-left">
               <p className="font-bold">Redes sociais:</p>
-              <div className="flex space-x-4 mt-2">@m2esolutionsst</div>
+              <p>@m2esolutionsst</p>
             </div>
           </div>
           <div className="mt-4 text-center">
@@ -201,7 +200,7 @@ export default function Home() {
               href="https://m2e.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline hover:text-teal-300"
             >
               https://m2e.vercel.app/
             </a>
