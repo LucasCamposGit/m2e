@@ -111,10 +111,11 @@ export default function Home() {
               saúde no trabalho em sua empresa.
             </p>
 
+            <div className="w-screen h-20 bg-[#0f2333] -translate-x-28"></div>
             <div className="grid sm:grid-cols-2 gap-8 mt-12">
               <div>
-                <h2 className="text-xl font-bold mb-4">Missão</h2>
-                <p>
+                <h2 className="text-3xl font-bold mb-4">Missão</h2>
+                <p className="text-lg">
                   Ser referência em soluções integradas de Saúde e Segurança do
                   Trabalho, com um time dedicado a antecipar e atender as
                   necessidades dos clientes, promovendo ambientes laborais
@@ -122,21 +123,21 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h2 className="text-xl font-bold mb-4">Visão</h2>
-                <p>
+                <h2 className="text-3xl font-bold mb-4">Visão</h2>
+                <p className="text-lg">
                   Ser reconhecida nacionalmente como líder em simplificar e
                   desburocratizar a gestão de saúde e segurança no trabalho.
                 </p>
               </div>
               <div>
-                <h2 className="text-xl font-bold mb-4">Valores</h2>
-                <p>
+                <h2 className="text-3xl font-bold mb-4">Valores</h2>
+                <p className="text-lg">
                   Ética, Compromisso, Excelência, Inovação, Sustentabilidade.
                 </p>
               </div>
               <div>
-                <h2 className="text-xl font-bold mb-4">Propósito</h2>
-                <p>
+                <h2 className="text-3xl font-bold mb-4">Propósito</h2>
+                <p className="text-lg">
                   Empregar conhecimento técnico e experiência para revolucionar
                   a saúde e segurança ocupacional, enquanto adotamos processos
                   ágeis para criar ambientes de trabalho seguros e saudáveis por
