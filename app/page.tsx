@@ -52,7 +52,7 @@ export default function Home() {
     <main className="bg-gray-100">
       <Header />
 
-      <section className="w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-20 py-20 h-[70vh] bg-[#0f2333] bg-auto bg-no-repeat bg-right md:bg-[url('/imgs/bg.png')] relative">
+      <section className="w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-20 py-20 h-[70vh] bg-[#0f2333] bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/bg.png')] relative">
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
           Gestão Inteligente
         </h1>
@@ -184,8 +184,6 @@ export default function Home() {
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col items-center md:items-start gap-1">
-              <p className="font-bold">Telefone:</p>
-              <p>(19) 99614-7086</p>
               <p className="font-bold">Whatsapp:</p>
 
               <a

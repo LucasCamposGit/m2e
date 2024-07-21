@@ -17,6 +17,7 @@ import {
   faExclamationTriangle,
   faHospital,
 } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 let services: Array<Services> = [];
 
@@ -47,20 +48,20 @@ export default function Services() {
           <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
               { icon: faClipboardList, title: "PGR NR 01 E 22" },
-              { icon: faHeartbeat, title: "ASO - CLÍNICO E COMPLEMENTARES" },
-              { icon: faFileAlt, title: "LTCAT e DEMAIS LAUDOS" },
               { icon: faStethoscope, title: "PCMSO, PCA, PPR" },
+              { icon: faHeartbeat, title: "ASO - CLÍNICO E COMPLEMENTARES" },
+              { icon: faHospital, title: "Gestão de clínicas credenciadas" },
+              { icon: faFileAlt, title: "LTCAT e DEMAIS LAUDOS" },
+              { icon: faCogs, title: "Laudo de Adequação NR 12" },
+              { icon: faClipboardList, title: "AVALIAÇÕES AMBIENTAS" },
+              { icon: faTools, title: "LOCAÇÃO DE EQUIPAMENTOS" },
+              { icon: faFireExtinguisher, title: "AVCB" },
+              { icon: faExclamationTriangle, title: "Hazop" },
               { icon: faChalkboardTeacher, title: "TREINAMENTOS E PALESTRAS" },
               { icon: faUsers, title: "GESTÃO DE ABSENTEÍSMO E AFASTADOS" },
               { icon: faHardHat, title: "MÃO DE OBRA EM SST" },
               { icon: faChartLine, title: "AUTOMATIZAÇÃO DE PROCESSOS" },
-              { icon: faTools, title: "LOCAÇÃO DE EQUIPAMENTOS" },
-              { icon: faClipboardList, title: "AVALIAÇÕES AMBIENTAS" },
-              { icon: faCogs, title: "Laudo de Adequação NR 12" },
-              { icon: faFireExtinguisher, title: "AVCB" },
               { icon: faMobileAlt, title: "APP personalizado" },
-              { icon: faExclamationTriangle, title: "Hazop" },
-              { icon: faHospital, title: "Gestão de clínicas credenciadas" },
             ].map((service, index) => (
               <div
                 key={index}
@@ -83,11 +84,19 @@ export default function Services() {
             Entre em contato conosco!
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col items-center md:items-start">
-              <p className="font-bold">Telefone:</p>
-              <p>(11) 91769-6435</p>
-              <p>(19) 99614-7086</p>
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <p className="font-bold">Whatsapp:</p>
+
+              <a
+                target="_blank"
+                href="https://wa.me/5511917696435"
+                className="underline hover:text-teal-300 flex"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6 mr-2" />
+                <p>(11) 91769-6435</p>
+              </a>
             </div>
+
             <div className="text-center md:text-left">
               <p className="font-bold">E-mail comercial:</p>
               <a
@@ -99,7 +108,14 @@ export default function Services() {
             </div>
             <div className="text-center md:text-left">
               <p className="font-bold">Redes sociais:</p>
-              <p>@m2esolutionsst</p>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/m2esolutionsst/"
+                className="underline hover:text-teal-300 flex mt-2"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" />
+                @m2esolutionsst
+              </a>
             </div>
           </div>
           <div className="mt-4 text-center">
