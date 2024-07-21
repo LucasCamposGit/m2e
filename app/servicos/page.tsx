@@ -11,6 +11,11 @@ import {
   faStethoscope,
   faUsers,
   faChartLine,
+  faCogs,
+  faFireExtinguisher,
+  faMobileAlt,
+  faExclamationTriangle,
+  faHospital,
 } from "@fortawesome/free-solid-svg-icons";
 
 let services: Array<Services> = [];
@@ -51,6 +56,11 @@ export default function Services() {
               { icon: faChartLine, title: "AUTOMATIZAÇÃO DE PROCESSOS" },
               { icon: faTools, title: "LOCAÇÃO DE EQUIPAMENTOS" },
               { icon: faClipboardList, title: "AVALIAÇÕES AMBIENTAS" },
+              { icon: faCogs, title: "Laudo de Adequação NR 12" },
+              { icon: faFireExtinguisher, title: "AVCB" },
+              { icon: faMobileAlt, title: "APP personalizado" },
+              { icon: faExclamationTriangle, title: "Hazop" },
+              { icon: faHospital, title: "Gestão de clínicas credenciadas" },
             ].map((service, index) => (
               <div
                 key={index}

@@ -5,7 +5,7 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
-  faLinkedin,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -52,7 +52,7 @@ export default function Home() {
     <main className="bg-gray-100">
       <Header />
 
-      <section className="w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-20 py-20 h-[70vh] bg-[#0f2333] bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/background-nobg.png')] relative">
+      <section className="w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-20 py-20 h-[70vh] bg-[#0f2333] bg-auto bg-no-repeat bg-right md:bg-[url('/imgs/bg.png')] relative">
         <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
           Gestão Inteligente
         </h1>
@@ -86,20 +86,29 @@ export default function Home() {
               trabalho no Brasil.
             </h2>
             <p className="text-lg">
-              Em um mundo atolado por papelada, dados e exigências legais
-              intermináveis, Emerson e Mirian, dois engenheiros apaixonados por
-              segurança do trabalho, ansiavam por uma forma melhor de trabalhar.
-              Como líderes em suas empresas, eles estavam frustrados com a
-              sobrecarga administrativa que ofuscava seu verdadeiro propósito:
-              garantir a saúde e a segurança de seus colaboradores.
+              Emerson e Mirian, dois engenheiros apaixonados por Saúde e
+              Segurança do Trabalho, estavam frustrados com a sobrecarga
+              administrativa que dificultava seu verdadeiro propósito.
             </p>
             <p className="text-lg">
-              Motivados por uma visão compartilhada, eles embarcaram em uma
-              missão para transformar o SESMT (Serviço Especializado em
-              Engenharia de Segurança e Medicina do Trabalho) em um processo
-              mais eficiente e ágil. Durante um congresso de segurança
-              ocupacional, uma ideia surgiu: &quot;E se pudéssemos usar a tecnologia
-              para revolucionar esses processos?&quot;
+              Motivados por uma visão compartilhada, decidiram transformar o
+              SESMT (Serviço Especializado em Engenharia de Segurança e Medicina
+              do Trabalho) em um processo mais eficiente e ágil. Durante um
+              congresso de segurança ocupacional, surgiu a ideia de usar a
+              tecnologia para revolucionar esses processos.
+            </p>
+            <p className="text-lg">
+              Assim nasceu a M2E. Nossa consultoria integra tecnologia de ponta,
+              modelo de gestão inovador e expertise para simplificar processos e
+              elevar os padrões de segurança nas empresas. Trabalhamos com um
+              escopo abrangente que inclui todas as áreas relacionadas à saúde e
+              segurança no trabalho. Com uma abordagem centrada no cliente,
+              ajudamos nossos clientes a focarem em seus negócios, sabendo que a
+              saúde e a segurança de seus colaboradores estão em boas mãos.
+            </p>
+            <p className="text-lg">
+              Junte-se a nós e descubra como podemos elevar a segurança e a
+              saúde no trabalho em sua empresa.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mt-12">
@@ -174,11 +183,21 @@ export default function Home() {
             Entre em contato conosco!
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start gap-1">
               <p className="font-bold">Telefone:</p>
-              <p>(11) 91769-6435</p>
               <p>(19) 99614-7086</p>
+              <p className="font-bold">Whatsapp:</p>
+
+              <a
+                target="_blank"
+                href="https://wa.me/5511917696435"
+                className="underline hover:text-teal-300 flex"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6 mr-2" />
+                <p>(11) 91769-6435</p>
+              </a>
             </div>
+
             <div className="text-center md:text-left">
               <p className="font-bold">E-mail comercial:</p>
               <a
@@ -190,7 +209,14 @@ export default function Home() {
             </div>
             <div className="text-center md:text-left">
               <p className="font-bold">Redes sociais:</p>
-              <p>@m2esolutionsst</p>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/m2esolutionsst/"
+                className="underline hover:text-teal-300 flex mt-2"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" />
+                @m2esolutionsst
+              </a>
             </div>
           </div>
           <div className="mt-4 text-center">
