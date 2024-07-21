@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Header from "./components/header";
-import { title } from "process";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   type Advatages = {
@@ -54,11 +61,15 @@ export default function Home() {
       <section
         className="w-screen flex gap-5 
               flex-col justify-start items-start pl-20 
-              pt-14 h-96 bg-white bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/background.jpg')]
+              pt-14 h-96 bg-[#0f2333] bg-contain bg-no-repeat bg-right md:bg-[url('/imgs/background-nobg.png')]
               relative"
       >
-        <h1 className="text-5xl drop-shadow-lg">Gestão Inteligente</h1>
-        <p className="text-lg drop-shadow-lg">Segurança e Saúde no Trabalho</p>
+        <h1 className="text-white text-5xl drop-shadow-lg">
+          Gestão Inteligente
+        </h1>
+        <p className="text-white text-lg drop-shadow-lg">
+          Segurança e Saúde no Trabalho
+        </p>
 
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScMQzRvDO6H2SMwtyqrRZoo_P7f_XT5BfuC60TRBahm2XGuKg/viewform?usp=sharing"
@@ -77,14 +88,8 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1">
+      <section className="bg-[#88d0da] grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1">
         <div className="flex justify-between items-start p-10 max-md:grid max-md:grid-flow-row">
-          <Image
-            src={"/imgs/right-simbol.png"}
-            height={150}
-            width={150}
-            alt="right arrow"
-          />
           <h1 className="mt-4 ">Quem somos</h1>
         </div>
         <div className="p-10 flex flex-col information gap-5 max-md:p-1">
@@ -111,23 +116,20 @@ export default function Home() {
 
           <h2>Missão</h2>
           <p>
-            Fortalecer empresas através da excelência em saúde e segurança
-            ocupacional, otimizando processos e garantindo conformidade legal.
+            Ser referência em soluções integradas de Saúde e Segurança do
+            Trabalho, com um time dedicado a antecipar e atender as necessidades
+            dos clientes, promovendo ambientes laborais seguros e saudáveis, e
+            agregando valor.
           </p>
 
           <h2>Visão</h2>
           <p>
-            Ser a escolha líder mundial em soluções integradas de saúde e
-            segurança ocupacional, impulsionando o crescimento sustentável e a
-            prevenção de acidentes através da inovação e eficiência.
+            Ser reconhecida nacionalmente como líder em simplificar e
+            desburocratizar a gestão de saúde e segurança no trabalho.
           </p>
 
           <h2>Valores</h2>
-          <p>
-            Comprometimento com a excelência, inovação continuada,
-            responsabilidade social e ambiental, integridade e ética, e foco no
-            cliente são os pilares que sustentam a nossa atuação.
-          </p>
+          <p>Ética Compromisso Excelência Inovação Sustentabilidade.</p>
 
           <h2>Propósito</h2>
           <p>
@@ -139,24 +141,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1 ">
+      <section className="bg-[#0f2333] grid grid-cols-[0.6fr_1fr] gap-2 info px-24 max-md:grid-flow-row max-md:grid-cols-1 ">
         <div className="flex justify-between items-start p-10  max-md:grid max-md:grid-flow-row">
-          <Image
-            src={"/imgs/right-simbol.png"}
-            height={150}
-            width={150}
-            alt="right arrow"
-          ></Image>
-          <h1 className="mt-4 whitespace-nowrap">Vantagens</h1>
+          <h1 className="mt-4 whitespace-nowrap text-white">Vantagens</h1>
         </div>
         <div className="p-10 flex flex-col information gap-5">
-          <h2 className="!mt-0 ">
+          <h2 className="!mt-0 text-white">
             Conheça algumas vantagens em ser cliente M2E.
           </h2>
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-y-20 px-20 max-md:grid-flow-row max-md:grid-cols-1">
+      <section className="bg-[#88d0da] grid grid-cols-3 gap-y-20 px-20 py-16 max-md:grid-flow-row max-md:grid-cols-1">
         {advantages.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-5">
@@ -175,6 +171,43 @@ export default function Home() {
           );
         })}
       </section>
+
+      <footer className="bg-teal-700 text-white py-6">
+        <div className="container mx-auto px-4">
+          <h2 className="text-lg font-bold">Entre em contato conosco!</h2>
+          <div className="flex flex-col md:flex-row justify-between items-center mt-4">
+            <div className="flex flex-col items-start">
+              <p>Telefone:</p>
+              <p>(11) 91769-6435</p>
+              <p>(19) 99614-7086</p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <p className="font-bold">E-mail comercial:</p>
+              <a
+                href="mailto:mirianoliveira@m2esolutionsst.onmicrosoft.com"
+                className="flex items-center mt-2"
+              >
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                mirianoliveira@m2esolutionsst.onmicrosoft.com
+              </a>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <p className="font-bold">Redes sociais:</p>
+              <div className="flex space-x-4 mt-2">@m2esolutionsst</div>
+            </div>
+          </div>
+          <div className="mt-4 text-center">
+            <a
+              href="https://m2e.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              https://m2e.vercel.app/
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
