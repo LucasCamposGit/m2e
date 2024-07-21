@@ -7,19 +7,3 @@ body {
     @apply overflow-x-hidden;
 }
 
-.info {
-    h1 {
-        @apply text-3xl ;
-
-    }
-}
-
-
-.information {
-    h2 {
-        @apply border-l-2 pl-6 border-white text-3xl  my-6;
-    }
-    p {
-        @apply text-lg text-gray-700 pl-6 normal-case;
-    }
-}
