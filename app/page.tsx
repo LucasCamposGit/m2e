@@ -98,8 +98,8 @@ export default function Home() {
               missão para transformar o SESMT (Serviço Especializado em
               Engenharia de Segurança e Medicina do Trabalho) em um processo
               mais eficiente e ágil. Durante um congresso de segurança
-              ocupacional, uma ideia surgiu: "E se pudéssemos usar a tecnologia
-              para revolucionar esses processos?"
+              ocupacional, uma ideia surgiu: &quot;E se pudéssemos usar a tecnologia
+              para revolucionar esses processos?&quot;
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mt-12">
