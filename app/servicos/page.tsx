@@ -47,21 +47,24 @@ export default function Services() {
           </div>
           <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
-              { icon: faClipboardList, title: "PGR NR 01 E 22" },
-              { icon: faStethoscope, title: "PCMSO, PCA, PPR" },
-              { icon: faHeartbeat, title: "ASO - CLÍNICO E COMPLEMENTARES" },
-              { icon: faHospital, title: "Gestão de clínicas credenciadas" },
-              { icon: faFileAlt, title: "LTCAT e DEMAIS LAUDOS" },
-              { icon: faCogs, title: "Laudo de Adequação NR 12" },
-              { icon: faClipboardList, title: "AVALIAÇÕES AMBIENTAS" },
-              { icon: faTools, title: "LOCAÇÃO DE EQUIPAMENTOS" },
-              { icon: faFireExtinguisher, title: "AVCB" },
-              { icon: faExclamationTriangle, title: "Hazop" },
-              { icon: faChalkboardTeacher, title: "TREINAMENTOS E PALESTRAS" },
-              { icon: faUsers, title: "GESTÃO DE ABSENTEÍSMO E AFASTADOS" },
-              { icon: faHardHat, title: "MÃO DE OBRA EM SST" },
-              { icon: faChartLine, title: "AUTOMATIZAÇÃO DE PROCESSOS" },
-              { icon: faMobileAlt, title: "APP personalizado" },
+              { icon: "faClipboardList", title: "PGR NR 01 E 22" },
+              { icon: "faStethoscope", title: "PCMSO, PCA, PPR" },
+              { icon: "faHeartbeat", title: "ASO - CLÍNICO E COMPLEMENTARES" },
+              { icon: "faHospital", title: "GESTÃO DE CLÍNICAS CREDENCIADAS" },
+              { icon: "faFileAlt", title: "LTCAT E DEMAIS LAUDOS" },
+              { icon: "faCogs", title: "LAUDO DE ADEQUAÇÃO NR 12" },
+              { icon: "faClipboardList", title: "AVALIAÇÕES AMBIENTAIS" },
+              { icon: "faTools", title: "LOCAÇÃO DE EQUIPAMENTOS" },
+              { icon: "faFireExtinguisher", title: "AVCB" },
+              { icon: "faExclamationTriangle", title: "HAZOP" },
+              {
+                icon: "faChalkboardTeacher",
+                title: "TREINAMENTOS E PALESTRAS",
+              },
+              { icon: "faUsers", title: "GESTÃO DE ABSENTEÍSMO E AFASTADOS" },
+              { icon: "faHardHat", title: "MÃO DE OBRA EM SST" },
+              { icon: "faChartLine", title: "AUTOMATIZAÇÃO DE PROCESSOS" },
+              { icon: "faMobileAlt", title: "APP PERSONALIZADO" },
             ].map((service, index) => (
               <div
                 key={index}
